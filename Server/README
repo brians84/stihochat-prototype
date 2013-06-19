@@ -21,3 +21,7 @@ c. Change the password in the config.db.php file
 3. Adjusting the client ----
 
 a. Modify the server url for the client in app/alloy.js
+
+
+----------
+This server is part of the StihoAntwoord App Prototype project and is licensed under the Creative Commons Naamsvermelding-NietCommercieel 3.0 Nederland.
