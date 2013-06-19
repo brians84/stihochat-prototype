@@ -1,0 +1,12 @@
+
+"TableViewRow": {
+	height:42,
+	editable:true,
+	touchEnabled:true,
+	selectionStyle:Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
+	selectedColor: 'transparent',
+	backgroundColor: '#fff'
+},
+"TableView": {
+style:Titanium.UI.iPhone.TableViewStyle.GROUPED
+}

@@ -1,0 +1,10 @@
+
+"TableViewRow": {
+	height:42,
+	editable:false,
+	backgroundColor: '#fff',
+	hasChild: true
+},
+"TableView": {
+style:Titanium.UI.iPhone.TableViewStyle.GROUPED
+}

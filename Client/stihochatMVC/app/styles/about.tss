@@ -1,0 +1,26 @@
+".container": {
+	backgroundColor: "white"
+},
+
+"#title": {
+	font: {
+		fontWeight:"bold",
+		fontColor:'#000'
+	}
+},
+
+
+"#subtitle": {
+	font: {
+		fontColor:'#000'
+	}
+},
+
+"#copyright": {
+	font: {
+		fontColor:'#000',
+		fontSize:12
+	},
+	textAlign:'center',
+	width:300
+}

@@ -1,0 +1,59 @@
+<Alloy>
+	<Window class="container" title="Thuis">
+		<RightNavButton>
+			<Button onClick="newChat">Nieuw</Button>
+		</RightNavButton>
+		
+		<View id="chats">
+			<TableView id="conversationtable">
+				
+				<TableViewRow name="Hoofdstraat 64" onClick="openChat">
+						<View class="images">
+							<ImageView class="profile" image="images/sample_profileimage1.png"></ImageView>
+						</View>
+						<View class="details" >
+							<Label class="title" text="Hoofdstraat 64"></Label>
+							<Label class="user"  text="Hans van der Pas"></Label>
+							<Label class="message"  text="Weet je nog die man van vorige ke.."></Label>
+						</View>
+						<View class="time">
+							<ImageView class="timerimage" image="images/time_ago.png" />
+							<Label class="ago"  text="23 sec"></Label>
+						</View>
+				</TableViewRow>	
+				
+				<TableViewRow name="STIHO Amstel" onClick="openChat">
+						<View class="images">
+							<ImageView class="profile" image="images/sample_profileimage2.png"></ImageView>
+						</View>
+						<View class="details" >
+							<Label class="title" text="STIHO Amstel"></Label>
+							<Label class="user"  text="Bruno Hendriks"></Label>
+							<Label class="message"  text="Afbeelding"></Label>
+						</View>
+						<View class="time">
+							<ImageView class="timerimage"  image="images/time_ago.png" />
+							<Label class="ago"  text="51 min"></Label>
+						</View>
+				</TableViewRow>	
+				
+					<TableViewRow name="Beschikbaarheid materiaal" onClick="openChat">
+						<View class="images">
+							<ImageView class="profile" image="images/sample_profileimage1.png"></ImageView>
+						</View>
+						<View class="details" >
+							<Label class="title" text="Beschikbaarheid materiaal"></Label>
+							<Label class="user"  text="Hans van der Pas"></Label>
+							<Label class="message"  text="Gesproken bericht"></Label>
+						</View>
+						<View class="time">
+							<ImageView class="timerimage" image="images/time_ago.png" />
+							<Label class="ago"  text="4 dagen"></Label>
+						</View>
+				</TableViewRow>	
+				
+				
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

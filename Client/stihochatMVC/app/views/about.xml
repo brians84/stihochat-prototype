@@ -1,0 +1,22 @@
+<Alloy>
+	<Window class="container" title="Over" id="about">
+		<View>
+			<TableView id="abouttable">
+				
+				<TableViewSection>	
+					<HeaderView height="300">
+						<View height="300">
+							<ImageView top="30" image="images/appicon.png"></ImageView>
+							<Label top="160" id="title">Stiho Antwoord (Prototype)</Label>
+							<Label top="178" id="subtitle">Versie 0.4.1</Label>
+							<Label top="220" id="copyright">Copyright MediaLAB Amsterdam 2013\n\nDe inhoud die wordt gegenereerd binnen de Stiho Antwoord app kunnen door Stiho gebruikt worden voor trainingsdoeleinden</Label>
+						</View>
+					</HeaderView>
+				</TableViewSection>	
+				
+			
+				
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

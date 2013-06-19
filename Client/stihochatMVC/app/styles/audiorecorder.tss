@@ -1,0 +1,62 @@
+
+
+"Label": {
+	color:'#ffffff',
+	font: { fontSize:14 },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+".instruction": {
+ top:60,
+ height:60,
+ backgroundColor:'black',
+ borderRadius:10,
+ left:10,
+ right:10
+},
+
+".duration": {
+	color:'#ffffff',
+	font: { fontSize:30 },
+    shadowColor: '#555',
+    shadowOffset: {x:1, y:1},
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+"#question":{
+		height:50,
+		font: { fontSize:15, fontWeight: 'bold' },
+	    backgroundGradient:{ 
+	        type:'linear', 
+	        colors:[{color:'#8cc5c5', position:0.0}, {color:'#6d9fa1', position:1.0}], 
+	        backFillStart: false 
+	    }
+},
+	
+"#cluster_question_switch": {
+    labels:['Nee', 'Ja'],
+    index:0,
+    right:10,
+    style:Titanium.UI.iPhone.SystemButtonStyle.BAR,
+    height:30,
+    width:100,
+    backgroundColor:'#8cc5c5'
+   }
+
+"#cluster_question_label": {
+	text:'Is dit een vraag?',
+	color:'white',
+	font: {
+		fontWeight:'bold'
+	},
+	left:10
+}
+
+"#bottombar": {
+	bottom:0,
+	height:50,
+	width:322,
+	backgroundColor:'#ff7800',
+	borderColor:'#ad5100',
+	backgroundImage:'images/chatmenu_bg.png'
+}

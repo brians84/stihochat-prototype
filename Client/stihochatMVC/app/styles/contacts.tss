@@ -1,0 +1,87 @@
+
+".contacts": {
+	top:0,
+	searchHidden:false,
+    filterAttribute:'name',
+	backgroundColor: "#f5f0eb"
+},
+
+".contact": {
+	height:42
+},
+
+".contactlabel": {
+	left:10
+},
+
+".contactssearch": {
+	 barColor: "#9aa7b0",
+	 showCancel:"false",
+	 height:44,
+	 top:0
+},
+
+"#stihocontacts": {
+	top:34
+},
+
+"#stihoskills": {
+	top:34
+},
+
+"#searchtabsholder": {
+	
+	zIndex:10,
+	height:35,
+	top:0,
+    backgroundGradient:{ 
+        type:'linear', 
+        colors:[{color:'#9ba8b1', position:0.0}, {color:'#cad1d5', position:1.0}], 
+        backFillStart: false 
+    }
+},
+
+"#searchtabs": {
+		
+	 index:0,
+	 top:5,
+	 width:'300',
+	 height:30,
+	 borderRadius:0,
+	 style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN
+},
+
+"#tab_phonecontacts": {
+	icon:"images/nav_phonecontacts.png"
+},
+
+"#tab_stihocontacts": {
+	icon:"images/nav_stihocontacts.png"
+},
+
+".contactname": {
+	font: {
+		fontSize: 16,
+		fontWeight:"bold"
+	},
+	left:10,
+	top:2
+},
+
+".location": {
+	font: {
+		fontSize: 13
+	},
+	left:10,
+	top:23
+}
+
+".tags": {
+	font: {
+		fontSize: 13
+	},
+	color:'#777',
+	right:15,
+	top:23
+},
+

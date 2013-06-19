@@ -1,0 +1,55 @@
+<Alloy>
+	<Window class="container" title="Groep opties" id="chatoptions">
+
+		<View>
+			<TableView id="groupchattable">
+				
+				<TableViewSection id="participants" headerTitle="Deelnemers">	
+					<TableViewRow title="Hans van de Pas"></TableViewRow>
+					<TableViewRow title="Bruno Hendriks"></TableViewRow>
+				</TableViewSection>	
+				
+				<TableViewSection>	
+					<HeaderView >
+						<View width="300" height="40">
+							<Button width="300" title="Deelnemer toevoegen" class="coloredbutton" onClick="addParticipant"></Button>
+						</View>
+					</HeaderView>
+				</TableViewSection>	
+				
+				<TableViewSection headerTitle="Afspeelopties">	
+					<TableViewRow>
+						<Label left="10">Geluid</Label>
+						<Switch value="true" right="10"></Switch>
+					</TableViewRow>
+					<TableViewRow>
+						<Label left="10">Speakervolume</Label>
+						<Slider width="150" right="10"></Slider>
+					</TableViewRow>
+				</TableViewSection>	
+				
+				<TableViewSection headerTitle="Meldingen">	
+				</TableViewSection>	
+				
+				<TableViewSection>	
+					<HeaderView >
+					<View height="100">
+						 <TabbedBar id="notifications" width="300" index="2" top="0">
+	                        <Labels>
+	                            <Label>Nooit</Label>
+	                            <Label>Vragen</Label>
+	                            <Label>Altijd</Label>
+	                        </Labels>
+	                	</TabbedBar>	
+						<View width="300" height="40" top="60">
+							<Button width="300" title="Verlaat Chat" class="coloredbutton" onClick="closeWindow"></Button>
+						</View>
+					</View>
+					</HeaderView>
+				</TableViewSection>	
+				
+				
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

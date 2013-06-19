@@ -1,0 +1,59 @@
+
+"Label": {
+	color:'#000'
+},
+
+"TableViewRow": {
+	height:80,
+	backgroundColor: "#f5f0eb"
+},
+
+".details": {
+	top:10,
+	left:70,
+	width:180
+},
+
+".title": {
+	left:0,
+	top:0,
+	height:20,
+	font: {fontSize:16, fontWeight:'bold'}
+},
+
+".user": {
+	left:0,
+	top:20,
+	height:20
+},
+
+
+".message": {
+	left:0,
+	top:43,
+	font: {fontSize:12},
+	color: '#549fa2'
+}
+
+
+".images": {
+	left:5,
+	width:60
+}
+
+".time": {
+	top:14,
+	right:10,
+	width:105,
+	height:10
+}, 
+
+"timerimage": {
+	left:0
+},
+
+".ago": {
+	color:'#777',
+	font: {fontSize:12},
+	right:0
+}

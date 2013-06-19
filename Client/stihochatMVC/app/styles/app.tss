@@ -1,0 +1,69 @@
+".container": {
+	barColor:"#de700f",
+	backgroundColor: "#f5f0eb"
+},
+
+".backbutton": {
+
+},
+
+".coloredbutton": {
+	height:34,
+    borderRadius: 5,
+    borderColor: '#548284',
+    style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN, 
+	font: { fontSize:15, fontWeight: 'bold' },
+    backgroundGradient:{ 
+        type:'linear', 
+        colors:[{color:'#8cc5c5', position:0.0}, {color:'#6d9fa1', position:1.0}], 
+        backFillStart: false 
+    }
+}
+
+".colorednavbutton": {
+	height:30,
+    borderRadius: 5,
+    borderColor: '#913d19',
+    style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN, 
+	font: { fontSize:14, fontWeight: 'bold' },
+    backgroundGradient:{ 
+        type:'linear', 
+        colors:[{color:'#e47547', position:0.0}, {color:'#d23f00', position:1.0}], 
+        backFillStart: false 
+    }
+}
+
+".coloredsendbutton": {
+	height:40,
+    borderRadius: 5,
+    borderColor: '#1f2a3c',
+    style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN, 
+	font: { fontSize:16, fontWeight: 'bold' },
+    backgroundGradient:{ 
+        type:'linear', 
+        colors:[{color:'#4185f4', position:0.0}, {color:'#1c53de', position:1.0}], 
+        backFillStart: false 
+    },
+    width: 80
+},
+
+".coloredagainbutton": {
+	height:40,
+    borderRadius: 5,
+    borderColor: '#913d19',
+    style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN, 
+	font: { fontSize:16, fontWeight: 'bold' },
+    backgroundGradient:{ 
+        type:'linear', 
+        colors:[{color:'#e47547', position:0.0}, {color:'#d23f00', position:1.0}], 
+        backFillStart: false 
+    },
+    width: 80
+}
+
+
+
+
+"TableView": {
+	backgroundColor: "#f5f0eb"
+}

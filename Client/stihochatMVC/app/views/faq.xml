@@ -1,0 +1,30 @@
+<Alloy>
+
+	<Window class="container" title="Dak">
+		
+			<TableView id="questions" class="contacts" onClick="openQuestion">
+				
+				<SearchBar id="categorysearch" class="categorysearch" />
+				
+				<TableViewSection headerTitle="Veelgestelde vragen">
+					<TableViewRow question="Ik moet een vloertje storten wat heb ik nodig als ik een vloer heb van 10 m2 en 4 cm dik moet?" answer="10 x 0.04= 0.4 m3 dus 400 ltr er gaat 12,5 ltr uit een zak dus 400/12,5=32 zakken.\n(deze vraag geld ook voor zand cement)">
+						<ImageView image="images/question.png"></ImageView>
+						<Label>Ik moet een vloertje storten wat heb ik nodig als ik een vloer heb van 10 m2 en 4 cm dik moet?</Label>
+					</TableViewRow> 
+					
+					<TableViewRow question="Wat is de mengverhouding van metselspecie? Beton? Zand cement?" answer="Metselspecie = 1 deel cement en 3 delen zand\nBeton= 1 deel cement en 2 delen zand en 3 delen grind.\nZand cement= 1 deel cement en 4 delen zand">
+						<ImageView image="images/question.png"></ImageView>
+						<Label>Wat is de mengverhouding van metselspecie? Beton? Zand cement?</Label>
+					</TableViewRow>
+					
+					<TableViewRow question="Wat is de draairichting van een deur?" answer="Als je gaat staan waar de deur naar je toedraait, aan welke kant dan je scharnieren zitten is je draairichting. Dus als hij naar je toe draait en de scharnieren zitten links dan is de deur links draaiend.">
+						<ImageView image="images/question.png"></ImageView>
+						<Label>Wat is de draairichting van een deur?</Label>
+					</TableViewRow>
+				</TableViewSection>
+				
+			</TableView>
+
+	</Window>
+
+</Alloy>

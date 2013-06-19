@@ -1,0 +1,77 @@
+<Alloy>
+		<Window id="chatwin" class="container" title="Chat">
+			
+			<RightNavButton>
+				<View id="chatNav" visible="false" width="74">
+					<Button id="questionbutton" right="11" height="30" width="30" class="colorednavbutton" onClick="openOpenQuestions" >
+						<Label id="questionmark" class="buttonlabel" color="white" top="4" left="9">?</Label>
+					</Button>
+					<ImageView right="0" top="-2" width="22" image="images/openquestions.png" onClick="openOpenQuestions"></ImageView> 
+					<Button left="0" class="colorednavbutton" width="30" onClick="openChatOptions"><ImageView image="images/settings.png"></ImageView></Button>
+				</View>
+			</RightNavButton>
+					
+			<View id="chatView">
+				<TableView id="messages" onClick="cancelTextMessage">
+	
+				</TableView>
+				
+				<View id="categorytags" height="417" bottom="0" visible="false" zIndex="5000" backgroundColor="#272b39">
+					
+					<View id="question2">
+						<Label id="question2_label"></Label>
+					</View>
+						
+					<Label bottom="100" color="white">Gelieve steekwoorden toevoegen:</Label>
+					<TextField id="tags" bottom="60" height="40" width="300" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"></TextField>
+					
+					
+					<Picker id="picker" top="50" useSpinner="false" selectionIndicator="true">
+			            <PickerColumn  id="column1">
+			                <PickerRow title="Selecteer een categorie:"/>
+			                <PickerRow title="Aan- of opbouw"/>
+			                <PickerRow title="Badkamer"/>
+			                <PickerRow title="Dak"/>
+			                <PickerRow title="Fundering"/>
+			                <PickerRow title="Kitten"/>
+			                <PickerRow title="Keuken"/>
+			                <PickerRow title="Lijmen"/>
+			                <PickerRow title="Schilderen"/>
+			                <PickerRow title="Toilet"/>
+			                <PickerRow title="Vloer"/>
+			                <PickerRow title="Wand"/>
+			                <PickerRow title="Zagen"/>
+			            </PickerColumn>
+			        </Picker>
+			        
+			        <Label bottom="135" color="white" id="selected" color="#676a79"></Label>
+			        
+			        <View id="bottombar">
+			        	<Button id="cancelquestionbutton" left="7" width="100" class="coloredagainbutton" title="Annuleer" onClick="closeCategoryTags" />
+			        	<Button id="sendquestionbutton" right="7"  width="80" class="coloredsendbutton" title="Verstuur" onClick="sendQuestion" />
+					</View>
+				
+				</View>
+				
+				<View id="messaging">
+					<Button id="image_button"  right="7" width="40" onClick="newPhotoMessage" class="colorednavbutton">
+						<ImageView image="images/button_camera.png"></ImageView> 
+					</Button>
+					<Button id="text_button"  left="7" width="40"  onClick="newTextMessage" class="colorednavbutton">
+						<ImageView image="images/button_text.png"></ImageView> 
+					</Button>
+					<Button id="voice_button" width="205"  onClick="newVoiceMessage" class="colorednavbutton">
+						<ImageView left="5" image="images/button_microphone.png"></ImageView>	
+						<Label left="30" class="buttonlabel" >Open het spraakscherm</Label>
+					</Button>
+					
+					<Button id="cancelbutton" left="7" visible="false" height="30" width="60" class="colorednavbutton" title="Cancel" onClick="cancelTextMessage" />
+					<TextField id="textmessage" visible="false" width="230" right="5" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" returnKeyType="Titanium.UI.RETURNKEY_SEND" />
+				</View>
+				
+				<View id="photoViewer" visible="false" onClick="closePhotoViewer">
+					<ImageView onClick="closePhotoViewer" image="images/close.png" right="10" top="10"></ImageView>
+				</View>
+			</View>
+		</Window>
+</Alloy>

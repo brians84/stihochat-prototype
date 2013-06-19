@@ -1,0 +1,52 @@
+<Alloy>
+	<Window id="audiorecorder" class="container" backgroundImage="images/alphabackground.png" title="Gesproken bericht">
+			 <LeftNavButton>
+	                <Button title="Annuleren" class="right_nav_button" onClick="closeAudioRecorder" />
+	        </LeftNavButton>
+	        
+	        
+		<View id="RecordingView"  backgroundColor="transparent">
+			
+			<View class="instruction">
+				<Label id="instruction_tap">Druk op de microfoonknop om te starten met opnemen.\nU kunt maximaal 45 seconden praten.</Label>
+				<Label id="instruction_recording" visible="false">Bezig met opnemen\nDruk nogmaals om te stoppen</Label>
+			</View> 
+			
+			<ImageView id="startrecordbutton" image="images/recordbutton.png" onClick="startRecording"> </ImageView>
+			
+			<ImageView id="stoprecordbutton" image="images/recordbutton_active.png" visible="false" onClick="stopRecording"> </ImageView>
+			
+			<View bottom="70" height="60">
+				<Label id="duration" class="duration"></Label>
+			</View> 
+			
+		</View>
+		
+		<View id="PreviewView" backgroundColor="transparent" visible="false">
+			
+			<View id="question" top="0" height="50" >
+	        	<Label id="cluster_question_label">Wilt u advies?</Label>
+	        	<TabbedBar id="cluster_question_switch" />
+	        </View>
+			
+			
+			<View bottom="130" height="60">
+				<ImageView left="85" image="images/playback_start.png" onClick="startPlaybackRecorded"> </ImageView>
+				<ImageView right="85" image="images/playback_stop.png" onClick="stopPlaybackRecorded"> </ImageView>
+			</View> 
+			
+			<View bottom="70" height="60">
+				<Label id="duration2" class="duration">test</Label>
+			</View> 
+			
+			<View id="bottombar">
+				
+				<Button id="recordagain" left="5" bottom="5" class="coloredagainbutton" onClick="retryRecording">Opnieuw</Button>
+				
+				<Button id="recordingsend" right="5" bottom="5" class="coloredsendbutton" onClick="prepareSendRecorded">Verstuur</Button>
+				
+			</View>
+		</View>
+		
+	</Window>
+</Alloy>

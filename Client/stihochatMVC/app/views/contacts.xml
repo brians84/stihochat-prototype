@@ -1,0 +1,189 @@
+<Alloy>
+	
+	<TabGroup id="contactstabgroup">
+        <Tab id="tab_phonecontacts" title="Mijn contacten">
+
+			<Window class="container" id="phonecontactswin" title="Mijn contacten">
+				
+				<LeftNavButton>
+					<Button onClick="goHome">Thuis</Button>
+				</LeftNavButton>
+
+					
+					<TableView class="contacts" onClick="clickPhoneContact">
+						
+						<SearchBar class="contactssearch" />
+					
+						<TableViewSection headerTitle="A">
+							<TableViewRow class="contact" name="Arjen Admiraal">
+								<Label class="contactname">Arjen Admiraal</Label>
+								<Label class="location">Amsterdam</Label>
+								<Label class="tags">Hout</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Sven van den Akker">
+								<Label class="contactname">Sven van den Akker</Label>
+								<Label class="location">Enkhuizen</Label>
+								<Label class="tags">Wanden, Vloeren, Hout</Label>
+							</TableViewRow>			
+						</TableViewSection>
+						
+						<TableViewSection headerTitle="D">
+							<TableViewRow class="contact" name="John Doe">
+								<Label class="contactname">John Doe</Label>
+								<Label class="location">Maastricht</Label>
+								<Label class="tags">Lijmen, Kitten</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Melvin Doe">
+								<Label class="contactname">Melvin Doe</Label>
+								<Label class="location">Utrecht</Label>
+								<Label class="tags">Hout, Kitten, Schilderen</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Tiago Duarte">
+								<Label class="contactname">Tiago Duarte</Label>
+								<Label class="location">Groningen</Label>
+								<Label class="tags">Hout, Badkamer, Toilet</Label>
+							</TableViewRow>					
+							<TableViewRow class="contact" name="Terry van Dreesden">
+								<Label class="contactname">Terry van Dreesden</Label>
+								<Label class="location">Nieuw-Vennep</Label>
+								<Label class="tags">Wanden</Label>
+							</TableViewRow>					
+						</TableViewSection>
+						
+						<TableViewSection headerTitle="S">
+							<TableViewRow class="contact" name="Johan Saft">
+								<Label class="contactname">Johan Saft</Label>
+								<Label class="location">Amsterdam</Label>
+								<Label class="tags">Hout</Label>
+							</TableViewRow>
+				
+						</TableViewSection>
+						
+						<TableViewSection headerTitle="T">
+							<TableViewRow class="contact" name="John Timmerman">
+								<Label class="contactname">John Timmerman</Label>
+								<Label class="location">Eindhoven</Label>
+								<Label class="tags">Badkamer, Toilet, Kitten</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Gerrit Treur">
+								<Label class="contactname">Gerrit Treur</Label>
+								<Label class="location">Amsterdam</Label>
+								<Label class="tags">Badkamer</Label>
+							</TableViewRow>
+						</TableViewSection>
+						
+					</TableView>
+					
+					// temp prototype letterscrolling image
+					<ImageView right="5" top="46" image="images/alphabetical_letters.png" onTouchstart="letterScrolling"></ImageView>
+				
+			</Window>
+		</Tab>
+		
+		<Tab id="tab_stihocontacts" title="STIHO Contacten">
+			<Window class="container" id="stihocontactswin" title="STIHO Contacten">
+				
+				<LeftNavButton>
+					<Button onClick="goHome">Home</Button>
+				</LeftNavButton>
+					
+				<View id="searchtabsholder">	
+	                <TabbedBar id="searchtabs">
+	                        <Labels>
+	                            <Label>Expertise</Label>
+	                            <Label>Naam</Label>
+	                        </Labels>
+	                </TabbedBar>
+				</View>
+				
+					
+					//* dummy data from LinkedIn "STIHO" search results
+					
+					
+					<TableView id="stihoskills" class="contacts" onClick="clickStihoSkills">
+						
+						<SearchBar id="skillsearch" class="contactssearch" />
+						
+						<TableViewSection headerTitle="Vaardighedenoverzicht">
+							<TableViewRow class="contact" title="Afwerking"></TableViewRow>
+							<TableViewRow class="contact" title="Bevestiging"></TableViewRow>
+							<TableViewRow class="contact" title="Hout"></TableViewRow>
+							<TableViewRow class="contact" title="Gereedschappen"></TableViewRow>
+							<TableViewRow class="contact" title="Keuken"></TableViewRow>
+							<TableViewRow class="contact" title="Skill 1"></TableViewRow>
+							<TableViewRow class="contact" title="Skill 2"></TableViewRow>
+						</TableViewSection>
+						
+					</TableView>
+
+
+					<TableView id="stihocontacts" class="contacts" onClick="clickStihoContact" visible="false" >
+						
+						<SearchBar id="stihosearchbar" class="contactssearch" />
+						
+						<TableViewSection headerTitle="C">
+							<TableViewRow class="contact" name="Jerry Cevat">
+								<Label class="contactname">Jerry Cevat</Label>
+								<Label class="location">Amsterdam</Label>
+								<Label class="tags">Hout</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Eric Cousin">
+								<Label class="contactname">Eric Cousin</Label>
+								<Label class="location">Rotterdam</Label>
+								<Label class="tags">Afwerking, bevestiging</Label>
+							</TableViewRow>
+						</TableViewSection>
+						
+						<TableViewSection headerTitle="K">
+							<TableViewRow class="contact" name="Yvonne Kuypers">
+								<Label class="contactname">Yvonne Kuypers</Label>
+								<Label class="location">Den Bosch</Label>
+								<Label class="tags">Kitten, Lijmen</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Kenny Kruijer">
+								<Label class="contactname">Kenny Kruijer</Label>
+								<Label class="location">Rotterdam</Label>
+								<Label class="tags">Badkamer, Toilet</Label>
+							</TableViewRow>
+						</TableViewSection>
+						
+						<TableViewSection headerTitle="S">
+							<TableViewRow class="contact" name="Marcel Schavemaker">
+								<Label class="contactname">Marcel Schavemaker</Label>
+								<Label class="location">Amsterdam</Label>
+								<Label class="tags">Afwerking, bevestiging</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Rob Seegers">
+								<Label class="contactname">Rob Seegers</Label>
+								<Label class="location">Utrecht</Label>
+								<Label class="tags">Vloeren, Wanden</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Tom Schipper">
+								<Label class="contactname">Tom Schipper</Label>
+								<Label class="location">Amsterdam</Label>
+								<Label class="tags">Vloeren</Label>
+							</TableViewRow>
+						</TableViewSection>
+						
+						<TableViewSection headerTitle="V">
+							<TableViewRow class="contact" name="Dennis Verkuil">
+								<Label class="contactname">Dennis Verkuil</Label>
+								<Label class="location">Haarlem</Label>
+								<Label class="tags">Lijmen, Schildederen</Label>
+							</TableViewRow>
+							<TableViewRow class="contact" name="Lesley van Velzen">
+								<Label class="contactname">Lesley van Velzen</Label>
+								<Label class="location">Hilversum</Label>
+								<Label class="tags">Afwerking</Label>
+							</TableViewRow>
+						</TableViewSection>
+						
+					</TableView>
+					
+
+			</Window>
+		</Tab>
+		
+	</TabGroup>
+	
+</Alloy>

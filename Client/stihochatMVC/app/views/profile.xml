@@ -1,0 +1,48 @@
+<Alloy>
+	<Window class="container" id="profilewin">
+		<View>
+			<TableView id="profileTable">
+				<TableViewSection>
+                    <HeaderView>
+                    	<View height="85">
+                    		<ImageView id="profileimage" image="images/default_profile.png" left="10" width="85" height="85" borderColor="#888" borderRadius="5" borderWidth="1"></ImageView>
+                    		<Button id="calluserbutton" class="coloredbutton" height="40" width="180" right="10" top="0" onClick="callUser">Bel 0654111111</Button>
+                    		<Button id="msguserbutton" class="coloredbutton" height="40" width="180" right="10" top="45" onClick="msgUser">Stuur een bericht</Button>
+                    	</View>
+                    </HeaderView>
+				</TableViewSection>
+
+				<TableViewSection>
+		                <TableViewRow class="tableviewrow">
+		                    <View layout="horizontal" class="rowview">
+		                    	<Label class="var_label">Naam</Label>
+		                        <TextField id="profilename" class="textfield" />
+		                    </View>
+		                </TableViewRow>
+		                <TableViewRow id="profilefunctionrow" class="tableviewrow">
+		                    <View layout="horizontal" class="rowview">
+		                    	<Label class="var_label">Beroep</Label>
+		                        <TextField id="profilefunction" class="textfield" />
+		                    </View>
+		                </TableViewRow>
+		                <TableViewRow class="tableviewrow">
+		                    <View layout="horizontal" class="rowview">
+		                    	<Label class="var_label">Bedrijf</Label>
+		                        <TextField id="profilecompany" class="textfield" value="STIHO"  />
+		                    </View>
+		                </TableViewRow>
+		                <TableViewRow id="profilelocationrow" class="tableviewrow">
+		                    <View layout="horizontal" class="rowview">
+		                    	<Label class="var_label" >Locatie</Label>
+		                        <TextField id="profilelocation" class="textfield" />
+		                    </View>
+		                </TableViewRow>
+		   		</TableViewSection>
+		   		
+				<TableViewSection id="userskills" headerTitle="">
+		   		</TableViewSection>
+		   		
+		    </TableView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,26 @@
+"#profilewin": {
+}
+
+".rowview": {
+	top:10
+},
+".tableviewrow": {
+	height:42,
+	editable:false,
+	touchEnabled:false,
+	selectionStyle:Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
+	selectedColor: 'transparent',
+	backgroundColor:'#fff'
+},
+"#profileTable": {
+style:Titanium.UI.iPhone.TableViewStyle.GROUPED
+},
+".var_label": {
+	color:'#999',
+	font: { fontSize:14 },
+	width:80,
+	left:10
+},
+".textfield": {
+	editable:false
+}

@@ -1,0 +1,61 @@
+<Alloy>
+	<Window class="container" id="loginwin">
+
+		<View id="loginView">
+			
+			<ImageView id="loginBox"> 
+				
+				<TableView id="loginTable">
+		                <TableViewRow class="tableviewrow">
+		                    <View layout="horizontal" class="rowview">
+		                        <TextField id="username" hintText="Klantnummer" class="textfield" value="Test user" />
+		                    </View>
+		                </TableViewRow>
+		                <TableViewRow class="tableviewrow">
+		                    <View layout="horizontal" class="rowview">
+		                        <TextField id="password" hintText="Wachtwoord" class="textfield" passwordMask="true" />
+		                    </View>
+		                </TableViewRow>
+		        </TableView>
+		        
+		        <Button id="loginButton" class="coloredbutton" onClick="submitLogin" title="Inloggen" />
+		        
+		        <Button id="registerButton" backgroundImage="none" onClick="submitRegister" title="Nieuwe gebruiker?" />
+		        
+			</ImageView>
+			
+		</View>
+		
+				
+		<View id="guidingscreens" backgroundColor="#fff">
+			<ImageView class="guidescreen" id="screen6" image="images/guide6.png" onClick="nextScreen" last="true" onSwipe="swipe">
+			</ImageView>
+			<ImageView class="guidescreen"  id="screen5"  image="images/guide5.png" onClick="nextScreen" onSwipe="swipe">
+			</ImageView>
+			<ImageView class="guidescreen"  id="screen4"  image="images/guide4.png" onClick="nextScreen" onSwipe="swipe">
+			</ImageView>
+			<ImageView class="guidescreen"  id="screen3"  image="images/guide3.png" onClick="nextScreen"onSwipe="swipe" >
+			</ImageView>
+			<ImageView class="guidescreen"  id="screen2"  image="images/guide2.png" onClick="nextScreen" onSwipe="swipe" >
+			</ImageView>
+			<ImageView class="guidescreen"  id="screen1" left="20" image="images/guide1.png" onClick="nextScreen" onSwipe="swipe">
+			</ImageView>
+			
+			<View bottom="20" width="110" height="34">
+				<ImageView left="0" image="images/dot.png"/>
+				<ImageView left="20" image="images/dot.png"/>
+				<ImageView left="40" image="images/dot.png"/>
+				<ImageView left="60" image="images/dot.png"/>
+				<ImageView left="80" image="images/dot.png"/>
+				<ImageView left="100" image="images/dot.png"/>
+				<ImageView id="current_dot" left="0" image="images/dot_blue.png"/>
+			</View>
+			
+			<View class="guidebutton prevbutton" id="prevbutton" onClick="prevScreen" />
+			<Label class="guidebutton skipbutton" id="skipbutton" onClick="closeScreens">Intro overslaan</Label>
+			<View class="guidebutton nextbutton" onClick="nextScreen" />
+		</View>
+		
+		
+	</Window>
+</Alloy>

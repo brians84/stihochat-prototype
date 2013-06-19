@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+provisioning_profiles/adhoc/42180069-CC9A-4256-A6B3-2F269EEB444A/appid=*
+provisioning_profiles/adhoc/42180069-CC9A-4256-A6B3-2F269EEB444A/name=Various Apps 2013
+provisioning_profiles/adhoc/42180069-CC9A-4256-A6B3-2F269EEB444A/uuid=42180069-CC9A-4256-A6B3-2F269EEB444A
+provisioning_profiles/development/1263B319-0AD0-4826-A699-DCDBB8D9E68D/appid=*
+provisioning_profiles/development/1263B319-0AD0-4826-A699-DCDBB8D9E68D/name=iOS Team Provisioning Profile\: *
+provisioning_profiles/development/1263B319-0AD0-4826-A699-DCDBB8D9E68D/uuid=1263B319-0AD0-4826-A699-DCDBB8D9E68D
+provisioning_profiles/development/D365F593-04D1-4DEC-B0B7-66C899555E43/appid=*
+provisioning_profiles/development/D365F593-04D1-4DEC-B0B7-66C899555E43/name=iOS Team Provisioning Profile\: *
+provisioning_profiles/development/D365F593-04D1-4DEC-B0B7-66C899555E43/uuid=D365F593-04D1-4DEC-B0B7-66C899555E43

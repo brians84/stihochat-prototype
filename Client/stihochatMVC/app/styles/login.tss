@@ -1,0 +1,97 @@
+
+"#loginView": {
+	width: Titanium.Platform.displayCaps.platformWidth,
+	height: Titanium.Platform.displayCaps.platformHeight,
+	top:'-20',
+	backgroundImage:"/Default.png"
+
+},
+
+"#loginTable": {
+	style:Titanium.UI.iPhone.TableViewStyle.GROUPED,  
+	scrollable:false,
+	backgroundColor:'transparent',
+	top:'-10'
+},
+".rowview": {
+	height:40
+},
+
+"#loginBox": {
+	borderRadius: 8,
+	borderWidth: 0,
+	backgroundColor:"#f58220",
+	width:300,
+	height:150
+},
+
+"#loginButton": {
+	bottom:10,
+	width:280,
+},
+
+"#registerButton": {
+	bottom:10,
+	width:280,
+	visible:false
+},
+
+
+".tableviewrow": {
+	backgroundColor:'#fff'
+},
+
+"#username": {
+	returnKeyType:Titanium.UI.RETURNKEY_NEXT //replaces the default Return key on the iOS keyboard
+},
+
+".textfield": {
+	height:40,
+	paddingLeft:10,
+	paddingRight:10,
+	width:'100%'
+},
+
+"label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+
+".guidescreen": {
+	width:280,
+	top:5,
+	borderColor:'#ccc',
+	left:640
+}
+
+".guidebutton": {
+
+}, 
+
+".nextbutton": {
+	right:5,
+	bottom:5,
+	backgroundImage:'images/next.png',
+	width:24,
+	height:24
+},
+
+
+".prevbutton": {
+	left:5,
+	bottom:5,
+	backgroundImage:'images/prev.png',
+	width:24,
+	height:24,
+	visible:false
+},
+
+".skipbutton": {
+	bottom:8,
+	color:'#777',
+	font: {
+	fontSize:13
+	}
+}
+

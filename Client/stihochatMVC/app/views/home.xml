@@ -1,0 +1,22 @@
+<Alloy>
+	<TabGroup id="hometabgroup" onFocus="openWindows">
+		<Tab id="tab_archive" title="Archief" icon="images/home_archive.png">
+			<Window class="container" title="Archief">
+			</Window>
+		</Tab>
+		<Tab id="tab_chats" title="Chats" icon="images/home_chats.png">
+			<Require src="conversations" />
+		</Tab>
+		<Tab id="tab_contacts" title="Contacten" icon="images/home_contacts.png" >
+			<Window class="container">
+			</Window>
+		</Tab>
+		<Tab id="tab_profile"  title="Profiel" icon="images/home_profile.png" >
+			<Window class="container" title="Profiel">
+			</Window>
+		</Tab>
+		<Tab id="tab_options"  title="Instellingen" icon="images/home_settings.png" >
+			<Require src="settings" />
+		</Tab>
+	</TabGroup>
+</Alloy>

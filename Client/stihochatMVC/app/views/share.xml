@@ -1,0 +1,16 @@
+<Alloy>
+	<Window class="container" title="Delen" id="share">
+
+		<View>
+			<TableView id="sharetable" onClick="openShare">
+				
+				<TableViewSection headerTitle="Vertel het een vriend">	
+					<TableViewRow title="E-mail bericht"></TableViewRow>
+					<TableViewRow title="SMS bericht"></TableViewRow>
+					<TableViewRow title="Facebook bericht"></TableViewRow>
+				</TableViewSection>	
+				
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

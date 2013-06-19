@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="container" title="Instellingen" id="settings">
+
+		<View>
+			<TableView id="settingstable" onClick="clickOption">
+				
+				<TableViewSection>	
+					<TableViewRow title="Help"></TableViewRow>
+					<TableViewRow title="Over"></TableViewRow>
+					<TableViewRow title="Deel met vrienden"></TableViewRow>
+					<TableViewRow title="Vragen en suggesties"></TableViewRow>
+				</TableViewSection>	
+				
+				<TableViewSection>	
+					
+				</TableViewSection>	
+				
+			</TableView>
+		</View>
+	</Window>
+</Alloy>

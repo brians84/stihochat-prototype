@@ -1,0 +1,38 @@
+Readme File for StihoAntwoord App Prototype
+
+ * Developed by ClickSmash for MediaLAB Amsterdam
+ * Developer: Brian Sahertian
+ * 
+ * Development started on May 11, 2013
+ * Last updated: June 18, 2013
+ * Version: 1.2 Fase 3.1
+ * 
+ * This prototype is based on the flowchart, wireframes and initial designs that were provided by
+ * MediaLAB. This prototype only simulates the functionality, except for the chat which will 
+ * be partially functional (it will allow sending and receiving simple text, audio and photo messages)
+ 
+This app was written in Titanium Appcelerator in order to deploy this to both iOS and Android from (almost) the same code base.
+The app uses the Alloy MVC model to structure the code. It should work with Titanium Appcelerator 3.x and up.
+
+The prototype is currently limited to controllers, views (and styles). The actual app should be extended with models as well.
+
+----------------------------------
+
+Configuration
+
+Requirements:
+- Titanium Appcelerator 3.1+
+- Titanium Mobile SDK
+- iOS Development License from apple (Development Certificate, Profisioning Profile and SDK 6.1+)
+
+Copy the contents of the StihochatMVC into your titanium workbench folders.
+
+All files and other resources are structured according to de Titanium Appcelerator Alloy defaults 
+
+----------------------------------
+
+StihoAntwoord App Copyright (c) 2013 by MediaLAB Amsterdam. All Rights Reserved.
+
+Titanium is licensed under the Creative Commons Naamsvermelding-NietCommercieel 3.0 Nederland. Please
+see the LICENSE file for the full license.
+

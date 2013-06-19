@@ -1,0 +1,77 @@
+
+".container": {
+	tabBarHidden:true
+}
+
+"#messages": {
+	style: Ti.UI.iPhone.TableViewStyle.PLAIN,
+	separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE,
+	separatorColor: '#f5f0eb',
+	top:0,
+	height:366,
+	backgroundColor: "#f5f0eb"
+},
+
+"#messaging": {
+	bottom:0,
+	height:50,
+	width:322,
+	backgroundColor:'#ff7800',
+	borderColor:'#ad5100',
+	backgroundImage:'images/chatmenu_bg.png'
+}
+
+"#sendorcancel": {
+	bottom:0,
+	height:50,
+	width:322,
+	backgroundColor:'#ff7800',
+	borderColor:'#ad5100'
+}, 
+
+".buttonlabel": {
+	color:'white',
+	font:{
+		fontWeight:"bold",
+		fontSize:14
+	},
+	shadowColor: '#555',
+	shadowOffset: {x:0, y:'-1'}
+}
+
+"#questionmark": {
+	font:{
+		fontWeight:"bold",
+		fontSize:18
+	}
+},
+
+"#bottombar": {
+	bottom:0,
+	height:50,
+	width:322,
+	backgroundColor:'#ff7800',
+	borderColor:'#ad5100',
+	backgroundImage:'images/chatmenu_bg.png'
+},
+
+
+"#question2": {
+		top:'0',
+		height:50,
+		font: { fontSize:15, fontWeight: 'bold' },
+	    backgroundGradient:{ 
+	        type:'linear', 
+	        colors:[{color:'#8cc5c5', position:0.0}, {color:'#6d9fa1', position:1.0}], 
+	        backFillStart: false 
+	    }
+},
+
+"#question2_label": {
+		text:'Hoe categoriseert u deze vraag om advies?',
+		color:'white',
+		font: {
+			fontWeight:'bold'
+		},
+		left:10
+	}

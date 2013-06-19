@@ -1,0 +1,17 @@
+".container": {
+	backgroundColor: "white"
+},
+"#questions": {
+	filterAttribute:'question'
+},
+"TableViewRow": {
+	height: Ti.UI.SIZE
+}, 
+"Label": {
+	left:32,
+	bottom:10
+},
+"ImageView": {
+	left:3,
+	top:3
+}

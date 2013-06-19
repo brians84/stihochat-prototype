@@ -1,0 +1,157 @@
+<Alloy>
+
+	<Window class="container" title="Archief">
+		
+	
+			<View id="searchtabsholder" onClick="toggleCategories">	
+                <TabbedBar id="searchtabs">
+                        <Labels>
+                            <Label class="tab">Diensten</Label>
+                            <Label class="tab">Producten</Label>
+                        </Labels>
+                </TabbedBar>
+			</View>
+	
+			<TableView id="services" class="categories" onClick="openClusterArchive">
+				
+				<SearchBar id="categorysearch" class="categorysearch" />
+				
+				<TableViewSection headerTitle="Diensten">
+							<TableViewRow name="Aan- of opbouw">
+			                	<View backgroundColor="#485a4c">
+			                		<ImageView image="images/cat_aanopbouw.png" />
+			                	</View>
+								
+								<Label>Aan- of opbouw</Label>
+							</TableViewRow>
+			                <TableViewRow name="Badkamer">
+			                	<View backgroundColor="#6a8870">
+									<ImageView image="images/cat_badkamer.png" />
+			                	</View>
+								<Label class="label_enabled" id="label_badkamer">Badkamer</Label>
+							</TableViewRow>
+			                <TableViewRow name="Dak">
+			                	<View backgroundColor="#98aa7a">
+									<ImageView image="images/cat_dak.png" />
+								</View>
+								<Label class="label_enabled">Dak</Label>
+							</TableViewRow>
+			                <TableViewRow name="Fundering">
+			                	<View backgroundColor="#899040">
+									<ImageView image="images/cat_fundering.png" />
+								</View><Label>Fundering</Label>
+							</TableViewRow>
+			                <TableViewRow name="Keuken">
+			                	<View backgroundColor="#656b2f">
+									<ImageView image="images/cat_keuken.png" />
+								</View><Label>Keuken</Label>
+							</TableViewRow>
+			                <TableViewRow name="Kitten">
+			                	<View backgroundColor="#cd8300">
+									<ImageView image="images/cat_kitten.png" />
+								</View>
+								<Label>Kitten</Label>
+							</TableViewRow>
+			                <TableViewRow name="Lijmen en Verfen">
+			                	<View backgroundColor="#a44100">
+									<ImageView image="images/cat_verfen.png" />
+								</View><Label>Lijmen en Verfen</Label>
+							</TableViewRow>
+			                <TableViewRow name="Toilet">
+			                	<View backgroundColor="#912727">
+									<ImageView image="images/cat_toilet.png" />
+								</View><Label>Toilet</Label>
+							</TableViewRow>
+			                <TableViewRow name="Vloer">
+			                	<View backgroundColor="#9a4443">
+									<ImageView image="images/cat_vloer.png" />
+								</View><Label>Vloer</Label>
+							</TableViewRow>
+			                <TableViewRow name="Wand">
+			                	<View backgroundColor="#6a3e3f">
+									<ImageView image="images/cat_wand.png" />
+								</View><Label>Wand</Label>
+							</TableViewRow>
+			                <TableViewRow name="Zagen">
+			                	<View backgroundColor="#436571">
+									<ImageView image="images/cat_zagen.png" />
+								</View><Label>Zagen</Label>
+							</TableViewRow>
+				</TableViewSection>
+				
+			</TableView>
+			
+			
+			
+			<TableView id="products" class="categories" visible="false">
+				
+				<SearchBar id="categorysearch" class="categorysearch" />
+				
+				<TableViewSection headerTitle="Producten">
+							<TableViewRow name="Afbouwmaterialen">
+			                	<View backgroundColor="#485a4c">
+			                		<ImageView image="images/prod_afbouwmaterialen.png" />
+			                	</View>
+								
+								<Label>Afbouwmaterialen</Label>
+							</TableViewRow>
+			                <TableViewRow name="Bevestingsmaterialen">
+			                	<View backgroundColor="#6a8870">
+									<ImageView image="images/prod_bevestingsmaterialen.png" />
+			                	</View>
+								<Label>Bevestingsmaterialen</Label>
+							</TableViewRow>
+			                <TableViewRow name="Bouwmaterialen">
+			                	<View backgroundColor="#98aa7a">
+									<ImageView image="images/prod_bouwmaterialen.png" />
+								</View>
+								<Label>Bouwmaterialen</Label>
+							</TableViewRow>
+			                <TableViewRow name="Deuren en kozijnen">
+			                	<View backgroundColor="#899040">
+									<ImageView image="images/prod_deuren_en_kozijnen.png" />
+								</View><Label>Deuren en kozijnen</Label>
+							</TableViewRow>
+			                <TableViewRow name="Gereedschap">
+			                	<View backgroundColor="#656b2f">
+									<ImageView image="images/prod_gereedschap.png" />
+								</View><Label>Gereedschap</Label>
+							</TableViewRow>
+			                <TableViewRow name="Gevelbekleding">
+			                	<View backgroundColor="#cd8300">
+									<ImageView image="images/prod_gevelbekleding.png" />
+								</View>
+								<Label>Gevelbekleding</Label>
+							</TableViewRow>
+			                <TableViewRow name="Hang -en sluitwerk">
+			                	<View backgroundColor="#a44100">
+									<ImageView image="images/prod_hang-en-sluitwerk.png" />
+								</View><Label>Hang -en sluitwerk</Label>
+							</TableViewRow>
+			                <TableViewRow name="Hout">
+			                	<View backgroundColor="#912727">
+									<ImageView image="images/prod_hout.png" />
+								</View><Label>Hout</Label>
+							</TableViewRow>
+			                <TableViewRow name="Installatiematerialen">
+			                	<View backgroundColor="#9a4443">
+									<ImageView image="images/prod_installatiematerialen.png" />
+								</View><Label>Installatiematerialen</Label>
+							</TableViewRow>
+			                <TableViewRow name="Isolatie">
+			                	<View backgroundColor="#6a3e3f">
+									<ImageView image="images/prod_isolatie.png" />
+								</View><Label>Isolatie</Label>
+							</TableViewRow>
+			                <TableViewRow name="Persoonlijke bescherming">
+			                	<View backgroundColor="#436571">
+									<ImageView image="images/prod_persoonlijke-bescherming.png" />
+								</View><Label>Persoonlijke bescherming</Label>
+							</TableViewRow>
+				</TableViewSection>
+				
+			</TableView>
+
+	</Window>
+
+</Alloy>
