@@ -1,0 +1,69 @@
+
+This initial prototype server is very basic to support simulation in the prototype of the client app.
+Please not that it is not secured and optimized for performance at all.
+
+The audiogateway sends the right HTTP headers for the recorded AIF files. Downloading the file directly from the app may cause problems in the client when using NGINX or Apache.
+
+
+------------------
+INSTALLATION NOTES
+------------------
+
+This initial prototype server is very basic to support simulation in the prototype of the client app.
+Please not that it is not secured and optimized for performance at all.
+
+The audiogateway sends the right HTTP headers for the recorded AIF files. Downloading the file directly from the app may cause problems in the client when using NGINX or Apache.
+
+
+1. Setting up the server configuration ----
+
+a. Place all the .php files in the webroot of your webserver
+b. It requires one directory with writing access for web. Call it 'chatdata'.
+
+
+2. Setting up the database ----
+
+a. The MYSQL database should be generated using the create statements from "database.sql".
+b. Create a user called 'stihochat' with a random password and give write and read priviledges to the database
+c. Change the password in the config.db.php file
+
+
+3. Adjusting the client ----
+
+a. Modify the server url for the client in app/alloy.js
+
+
+--------------
+SOFTWARE USAGE
+--------------
+
+a. The Server
+
+The Server was initially developed using:
+- the latest NGINX installation using apt-get install on Ubuntu 12.04 LTS
+- PHP-FPM (PHP 5.3)
+- MySQL Community server 5.5
+
+The Server should run on any web server with a MySQL database.
+
+b. Client
+
+The Client was developed using the following software:
+- Titanium Studio (Appcelerator) 3.1.0.2
+- Titanium SDK
+- iOS SDK version 6.1
+
+A subscription to the iOS developer program from Apple is required to develop iOS programs.
+
+
+-----------
+USAGE NOTES
+-----------
+
+This simple prototype simulates 1 single group chat. All data from the data is loaded every time the chat is loaded.
+Data can be removed from the chat by simply triggering removedata.php via a HTTP request.
+
+
+
+----------
+This server is part of the StihoAntwoord App Prototype project and is licensed under the Creative Commons Naamsvermelding-NietCommercieel 3.0 Nederland.
